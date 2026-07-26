@@ -1,0 +1,62 @@
+.name {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25em 0.4em;
+  font-size: clamp(3rem, 12vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+}
+
+.word {
+  display: inline-flex;
+}
+
+.letter {
+  display: inline-block;
+  color: var(--color-ink);
+  opacity: 1;
+  transition-property: color, opacity;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  transition-delay: 0.25s;
+
+  @starting-style {
+    opacity: 0;
+    color: var(--color-coral);
+  }
+
+  &:hover {
+    transition-delay: 0s;
+  }
+
+  &:nth-child(4n + 1):hover {
+    color: var(--color-blue);
+  }
+  &:nth-child(4n + 2):hover {
+    color: var(--color-coral);
+  }
+  &:nth-child(4n + 3):hover {
+    color: var(--color-sage);
+  }
+  &:nth-child(4n):hover {
+    color: var(--color-mustard);
+  }
+}
+
+// Movement (as opposed to plain color/opacity crossfade) is gated behind
+// prefers-reduced-motion so motion-sensitive users still see the color
+// change but skip the translate/rotate bounce.
+@media (prefers-reduced-motion: no-preference) {
+  .letter {
+    transition-property: color, opacity, transform;
+
+    @starting-style {
+      transform: translateY(8px) rotate(-4deg);
+    }
+
+    &:hover {
+      transform: scale(1.15) translateY(-4px) rotate(-3deg);
+    }
+  }
+}
