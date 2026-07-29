@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bagel_Fat_One, Inter } from "next/font/google";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import Divider from "@/components/ui/Divider";
 import "./globals.css";
 
 const bagelFatOne = Bagel_Fat_One({
@@ -32,6 +33,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Header />
+        <Divider />
         {children}
         <Footer />
       </body>
