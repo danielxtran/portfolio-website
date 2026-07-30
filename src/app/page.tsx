@@ -8,9 +8,9 @@ export default function Home() {
     <main className={`mx-auto flex w-full ${CONTENT_WIDTH_CLASS} flex-1 flex-col px-6 pb-20`}>
       <IntroSection />
       <Divider />
-      <PlaceholderSection title="Current Roles" />
+      <PlaceholderSection title="Current Roles" hoverColor="sage" />
       <Divider />
-      <PlaceholderSection title="Highlighted Projects & Events" />
+      <PlaceholderSection title="Highlighted Projects & Events" hoverColor="mustard" />
     </main>
   );
 }

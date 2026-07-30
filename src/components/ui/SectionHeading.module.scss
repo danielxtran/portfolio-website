@@ -1,0 +1,21 @@
+.heading {
+  transition-property: color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+
+  &:hover {
+    color: var(--hover-color);
+  }
+}
+
+// Same treatment as the header's per-letter hover: color always transitions,
+// the bounce only plays if the user hasn't asked for reduced motion.
+@media (prefers-reduced-motion: no-preference) {
+  .heading {
+    transition-property: color, transform;
+
+    &:hover {
+      transform: scale(1.15) translateY(-4px) rotate(-3deg);
+    }
+  }
+}
