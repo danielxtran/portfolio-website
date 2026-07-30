@@ -8,6 +8,7 @@
   --color-sage: #7a8f5c;
   --color-mustard: #B48954;
   --color-orange: #F89254;
+  --color-frame: #ffffff;
 }
 
 @theme inline {
@@ -18,6 +19,7 @@
   --color-sage: var(--color-sage);
   --color-mustard: var(--color-mustard);
   --color-orange: var(--color-orange);
+  --color-frame: var(--color-frame);
   --font-display: var(--font-bagel);
   --font-body: var(--font-inter);
 }
