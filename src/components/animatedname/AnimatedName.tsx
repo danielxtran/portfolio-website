@@ -3,25 +3,19 @@ import styles from "./AnimatedName.module.scss";
 const WORDS = ["Daniel", "Tran"];
 
 export default function AnimatedName() {
-  let letterIndex = 0;
-
   return (
-    <h1 className={`${styles.name} font-display`} aria-label="Daniel Tran">
+    <h1 className={`${styles.name} font-display`} aria-label={WORDS.join(" ")}>
       {WORDS.map((word) => (
         <span key={word} className={styles.word}>
-          {word.split("").map((letter) => {
-            const index = letterIndex++;
-            return (
-              <span
-                key={index}
-                aria-hidden="true"
-                className={styles.letter}
-                style={{ "--i": index } as React.CSSProperties}
-              >
-                {letter}
-              </span>
-            );
-          })}
+          {word.split("").map((letter, i) => (
+            <span
+              key={i}
+              aria-hidden="true"
+              className={styles.letter}
+            >
+              {letter}
+            </span>
+          ))}
         </span>
       ))}
     </h1>
