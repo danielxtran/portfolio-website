@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "transportation-data-science-project",
+    "title": "Transportation Data Science Project",
+    "company": "Northeast Big Data Hub",
+    "startDate": "2025-01",
+    "endDate": "2025-01",
+    "location": "Columbus, OH",
+    "description": "Created data-driven recommendations to make roads safer for all through an educational initiative led by the Northeast Big Data Hub and National Student Data Corps. Networked with TDSP mentors, received a certificate and expanded my skillset in data science.",
+    "current": false
+  },
+  {
+    "slug": "hackohio-project",
+    "title": "HackOHI/O Project",
+    "company": "OHI/O",
+    "startDate": "2025-10",
+    "endDate": "2025-10",
+    "location": "Columbus, OH",
+    "description": "Participated in the HackOHI/O hackathon, working in a team to develop a solution for American Electric Power to build a dynamic web application that displayed power line stress within the given grid of O'ahu.",
+    "current": false
+  },
+  {
+    "slug": "bdaa-project-series",
+    "title": "BDAA Project Series",
+    "company": "BDAA",
+    "startDate": "2025-09",
+    "endDate": "2025-11",
+    "location": "Columbus, OH",
+    "description": "Conducted research within the Big Data Analytics Association's project series within the data science track. Researched the correlations using a Kaggle dataset between phone usage and mental health, presenting our findings at the end of semester Research Gala and winning 1st place within our track alongside the Student Choice Award.",
+    "current": false
+  },
+  {
+    "slug": "portfolio-website",
+    "title": "Portfolio Website",
+    "company": "Daniel Tran",
+    "startDate": "2026-04",
+    "endDate": null,
+    "location": "Columbus, OH",
+    "description": "Developing a responsive portfolio website to showcase my projects and skills, built with modern web technologies.",
+    "current": true
+  },
+  {
+    "slug": "steam-sale-database",
+    "title": "Steam Sale Database",
+    "company": "Daniel Tran",
+    "startDate": "2026-05",
+    "endDate": null,
+    "location": "Columbus, OH",
+    "description": "Building a database to track and analyze steam sale data, including pricing information, discounts, and user behavior.",
+    "current": true
+  },
+  {
+    "slug": "cse-faculty-awards-database",
+    "title": "CSE Faculty Awards Database",
+    "company": "OHI/O",
+    "startDate": "2026-05",
+    "endDate": null,
+    "location": "Columbus, OH",
+    "description": "Building a database to track and analyze faculty awards data, including nomination information, evaluation criteria, and award recipients.",
+    "current": true
+  }
+]

@@ -1,16 +1,16 @@
 import IntroSection from "@/components/home/IntroSection";
-import PlaceholderSection from "@/components/home/PlaceholderSection";
+import PlaceholderSection from "@/components/ui/PlaceholderSection";
 import Divider from "@/components/ui/Divider";
-import { CONTENT_WIDTH_CLASS } from "@/lib/layout";
+import PageContainer from "@/components/ui/PageContainer";
 
 export default function Home() {
   return (
-    <main className={`mx-auto flex w-full ${CONTENT_WIDTH_CLASS} flex-1 flex-col px-6 pb-20`}>
+    <PageContainer>
       <IntroSection />
       <Divider />
       <PlaceholderSection title="Current Roles" hoverColor="sage" />
       <Divider />
       <PlaceholderSection title="Highlighted Projects & Events" hoverColor="mustard" />
-    </main>
+    </PageContainer>
   );
 }
