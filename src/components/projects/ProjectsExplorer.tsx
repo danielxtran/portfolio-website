@@ -20,11 +20,11 @@ export default function ProjectsExplorer({
     allProjects.find((project) => project.slug === selectedSlug) ?? null;
 
   function openProject(slug: string) {
-    router.push(`/projects?project=${slug}`);
+    router.push(`/projects?project=${slug}`, { scroll: false });
   }
 
   function closeDialog() {
-    router.push("/projects");
+    router.push("/projects", { scroll: false });
   }
 
   return (

@@ -26,16 +26,19 @@ export default function ProjectDialog({ project, onClose }: ProjectDialogProps) 
     <dialog
       ref={dialogRef}
       onClose={onClose}
+      aria-labelledby="project-dialog-title"
       onClick={(event) => {
         if (event.target === event.currentTarget) {
           dialogRef.current?.close();
         }
       }}
-      className="fixed inset-0 m-auto h-fit max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-lg bg-paper p-6 text-ink backdrop:bg-ink/40"
+      className="fixed inset-0 m-auto h-fit max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-lg bg-paper text-ink backdrop:bg-ink/40"
     >
       {project && (
-        <>
-          <h3 className="font-display text-2xl">{project.title}</h3>
+        <div className="p-6">
+          <h3 id="project-dialog-title" className="font-display text-2xl">
+            {project.title}
+          </h3>
           <p className="mt-1 font-body text-sm text-ink/60">
             {project.company} · {formatDateRange(project.startDate, project.endDate)}
           </p>
@@ -47,7 +50,7 @@ export default function ProjectDialog({ project, onClose }: ProjectDialogProps) 
                 <Image
                   key={src}
                   src={src}
-                  alt=""
+                  alt={`${project.title} screenshot`}
                   width={240}
                   height={160}
                   className="h-40 w-60 flex-none rounded object-cover"
@@ -72,7 +75,7 @@ export default function ProjectDialog({ project, onClose }: ProjectDialogProps) 
               ))}
             </ul>
           )}
-        </>
+        </div>
       )}
     </dialog>
   );
