@@ -27,7 +27,8 @@
     "endDate": "2025-11",
     "location": "Columbus, OH",
     "description": "Conducted research within the Big Data Analytics Association's project series within the data science track. Researched the correlations using a Kaggle dataset between phone usage and mental health, presenting our findings at the end of semester Research Gala and winning 1st place within our track alongside the Student Choice Award.",
-    "current": false
+    "current": false,
+    "featured": true
   },
   {
     "slug": "portfolio-website",
@@ -47,7 +48,8 @@
     "endDate": null,
     "location": "Columbus, OH",
     "description": "Building a database to track and analyze steam sale data, including pricing information, discounts, and user behavior.",
-    "current": true
+    "current": true,
+    "featured": true
   },
   {
     "slug": "cse-faculty-awards-database",

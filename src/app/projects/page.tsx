@@ -1,10 +1,17 @@
-import PlaceholderSection from "@/components/ui/PlaceholderSection";
+import ProjectsExplorer from "@/components/projects/ProjectsExplorer";
 import PageContainer from "@/components/ui/PageContainer";
+import { getAllProjects } from "@/lib/projects";
 
-export default function ProjectsPage() {
+type ProjectsPageProps = {
+  searchParams: Promise<{ project?: string }>;
+};
+
+export default async function ProjectsPage({ searchParams }: ProjectsPageProps) {
+  const { project } = await searchParams;
+
   return (
     <PageContainer>
-      <PlaceholderSection title="Projects" hoverColor="mustard" />
+      <ProjectsExplorer allProjects={getAllProjects()} selectedSlug={project ?? null} />
     </PageContainer>
   );
 }

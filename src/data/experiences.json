@@ -43,6 +43,7 @@
     "location": "Columbus, OH",
     "description": "Mentoring first-year engineering students in their transition to college. Supporting an early arrival program alongside consistent programming throughout the school year to engage with the greater community and my assigned mentees.",
     "current": true,
+    "featured": true,
     "group": "CARE",
     "category": "Involvement"
   },
@@ -173,6 +174,7 @@
     "location": "Columbus, OH",
     "description": "Supporting the CARE Office Recruitment team by assisting with recruitment events, administrative tasks, and other initiatives to help the office run smoothly and effectively.",
     "current": true,
+    "featured": true,
     "group": "CARE",
     "category": "Work"
   },
