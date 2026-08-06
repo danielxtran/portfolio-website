@@ -1,3 +1,5 @@
+export const EXPERIENCE_CATEGORIES = ["Program", "Involvement", "Work"] as const;
+
 export type Experience = {
   slug: string;
   title: string;
@@ -9,5 +11,6 @@ export type Experience = {
   current: boolean;
   featured?: boolean;
   group?: string;
-  category: "Program" | "Involvement" | "Work";
+  category: (typeof EXPERIENCE_CATEGORIES)[number];
+  continuesFrom?: string; // slug of the entry this role evolved from
 };

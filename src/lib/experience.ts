@@ -10,3 +10,7 @@ export function getAllExperience(): Experience[] {
 export function getFeaturedExperience(): Experience[] {
   return getAllExperience().filter((entry) => entry.featured === true);
 }
+
+export function getCurrentExperience(): Experience[] {
+  return getAllExperience().filter((entry) => entry.current);
+}
