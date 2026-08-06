@@ -82,17 +82,18 @@
     "description": "Mentored first-year engineering students in their transition to college with the 10-day early arrival program. Supporting programming as well as educating within my assigned electrical engineering track teaching my designated group robotics.",
     "current": false,
     "group": "CARE",
-    "category": "Work"
+    "category": "Work",
+    "continuesFrom": "preface-2024"
   },
   {
     "slug": "step",
     "title": "STEP",
     "company": "Ohio State University",
     "startDate": "2025-08",
-    "endDate": null,
+    "endDate": "2026-05",
     "location": "Columbus, OH",
     "description": "Participated in the Second-year Transformational Experience Program, building community within my cohort while strengthening and defining my identity within the university. Attended weekly programming throughout the fall and proposed my pitch at the end of the school year for funding support.",
-    "current": true,
+    "current": false,
     "category": "Program"
   },
   {
@@ -117,7 +118,8 @@
     "current": false,
     "featured": true,
     "group": "WIT",
-    "category": "Work"
+    "category": "Work",
+    "continuesFrom": "seed-internship"
   },
   {
     "slug": "chase-society-scholars",
@@ -201,7 +203,8 @@
     "current": true,
     "featured": true,
     "group": "Ambassadors",
-    "category": "Involvement"
+    "category": "Involvement",
+    "continuesFrom": "engineering-ambassador"
   },
   {
     "slug": "makeohio-co-lead",
@@ -214,7 +217,8 @@
     "current": true,
     "featured": true,
     "group": "OHI/O",
-    "category": "Involvement"
+    "category": "Involvement",
+    "continuesFrom": "outreach-co-lead"
   },
   {
     "slug": "swe-fellow",

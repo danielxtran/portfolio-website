@@ -4,10 +4,10 @@ import IntroSection from "@/components/home/IntroSection";
 import Divider from "@/components/ui/Divider";
 import PageContainer from "@/components/ui/PageContainer";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { getFeaturedExperience } from "@/lib/experience";
+import { getCurrentExperience } from "@/lib/experience";
 
 export default function Home() {
-  const currentRoles = getFeaturedExperience().filter((role) => role.current);
+  const currentRoles = getCurrentExperience();
 
   return (
     <PageContainer>
@@ -18,7 +18,9 @@ export default function Home() {
       <div className="text-center">
         <SectionHeading hoverColor="sage">Current Roles</SectionHeading>
       </div>
-      <RoleList roles={currentRoles} />
+      <div className="mt-6">
+        <RoleList roles={currentRoles} linkTo={(slug) => `/experience?role=${slug}`} />
+      </div>
 
       <Divider />
 
