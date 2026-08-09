@@ -40,7 +40,8 @@ export default function ProjectDialog({ project, onClose }: ProjectDialogProps) 
             {project.title}
           </h3>
           <p className="mt-1 font-body text-sm text-ink/60">
-            {project.company} · {formatDateRange(project.startDate, project.endDate)}
+            {project.company} · {project.location} ·{" "}
+            {formatDateRange(project.startDate, project.endDate)}
           </p>
           <p className="mt-4 font-body leading-relaxed">{project.description}</p>
 

@@ -43,7 +43,7 @@ export default function TimelineDetailDialog({ role, onClose }: TimelineDetailDi
             {role.title}
           </h3>
           <p className="mt-1 font-body text-sm text-ink/60">
-            {role.company} · {formatDateRange(role.startDate, role.endDate)}
+            {role.company} · {role.location} · {formatDateRange(role.startDate, role.endDate)}
           </p>
           <p className="mt-4 font-body leading-relaxed">{role.description}</p>
         </div>

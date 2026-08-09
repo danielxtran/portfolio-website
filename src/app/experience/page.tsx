@@ -3,7 +3,7 @@ import TimelineExplorer from "@/components/experience/TimelineExplorer";
 import Divider from "@/components/ui/Divider";
 import PageContainer from "@/components/ui/PageContainer";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { getAllExperience, getFeaturedExperience } from "@/lib/experience";
+import { getAllExperience, getFeaturedExperience, isCurrent } from "@/lib/experience";
 import { getCurrentSemester } from "@/lib/semester";
 
 type ExperiencePageProps = {
@@ -13,8 +13,8 @@ type ExperiencePageProps = {
 export default async function ExperiencePage({ searchParams }: ExperiencePageProps) {
   const { role } = await searchParams;
   const highlighted = getFeaturedExperience();
-  const current = highlighted.filter((entry) => entry.current);
-  const previous = highlighted.filter((entry) => !entry.current);
+  const current = highlighted.filter(isCurrent);
+  const previous = highlighted.filter((entry) => !isCurrent(entry));
 
   return (
     <PageContainer>

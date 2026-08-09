@@ -11,6 +11,10 @@ export function getFeaturedExperience(): Experience[] {
   return getAllExperience().filter((entry) => entry.featured === true);
 }
 
+export function isCurrent(entry: Experience): boolean {
+  return entry.endDate === null;
+}
+
 export function getCurrentExperience(): Experience[] {
-  return getAllExperience().filter((entry) => entry.current);
+  return getAllExperience().filter(isCurrent);
 }

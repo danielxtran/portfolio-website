@@ -39,6 +39,7 @@ export default function TimelineExplorer({
         <button
           type="button"
           onClick={() => setView("chart")}
+          aria-pressed={view === "chart"}
           className={`rounded-full px-4 py-1.5 font-body text-sm transition-colors ${
             view === "chart" ? "bg-ink text-paper" : "text-ink/70 hover:text-ink"
           }`}
@@ -48,6 +49,7 @@ export default function TimelineExplorer({
         <button
           type="button"
           onClick={() => setView("list")}
+          aria-pressed={view === "list"}
           className={`rounded-full px-4 py-1.5 font-body text-sm transition-colors ${
             view === "list" ? "bg-ink text-paper" : "text-ink/70 hover:text-ink"
           }`}
