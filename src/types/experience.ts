@@ -8,7 +8,6 @@ export type Experience = {
   endDate: string | null; // null means ongoing
   location: string;
   description: string;
-  current: boolean;
   featured?: boolean;
   group?: string;
   category: (typeof EXPERIENCE_CATEGORIES)[number];

@@ -18,7 +18,7 @@ export default function HighlightCard({ highlight }: HighlightCardProps) {
         <p className={KICKER_CLASS}>Project</p>
         <h3 className="mt-1 font-display text-xl text-ink">{project.title}</h3>
         <p className="mt-1 font-body text-sm text-ink/60">
-          {formatDateRange(project.startDate, project.endDate)}
+          {project.location} · {formatDateRange(project.startDate, project.endDate)}
         </p>
       </Link>
     );

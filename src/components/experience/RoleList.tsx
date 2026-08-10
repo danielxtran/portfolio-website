@@ -2,13 +2,11 @@ import Link from "next/link";
 import type { Experience } from "@/types/experience";
 import { formatDateRange } from "@/lib/date";
 
-type RoleListProps = {
-  roles: Experience[];
-  onSelect?: (slug: string) => void;
-  linkTo?: (slug: string) => string;
-};
+type RoleListProps = { roles: Experience[] } & (
+  | { onSelect: (slug: string) => void; linkTo?: never }
+  | { linkTo: (slug: string) => string; onSelect?: never }
+);
 
-const ROW_CLASS = "flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 py-3";
 const INTERACTIVE_ROW_CLASS =
   "-mx-2 flex w-full flex-wrap items-baseline justify-between gap-x-4 gap-y-1 rounded px-2 py-3 text-left transition-colors hover:bg-ink/5";
 
@@ -42,12 +40,10 @@ export default function RoleList({ roles, onSelect, linkTo }: RoleListProps) {
               >
                 {content}
               </button>
-            ) : linkTo ? (
-              <Link href={linkTo(role.slug)} className={INTERACTIVE_ROW_CLASS}>
+            ) : (
+              <Link href={linkTo!(role.slug)} className={INTERACTIVE_ROW_CLASS}>
                 {content}
               </Link>
-            ) : (
-              <div className={ROW_CLASS}>{content}</div>
             )}
           </li>
         );

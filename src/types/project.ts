@@ -11,7 +11,6 @@ export type Project = {
   endDate: string | null; // null means ongoing
   location: string;
   description: string;
-  current: boolean;
   featured?: boolean;
   images?: string[];
   links?: ProjectLink[];

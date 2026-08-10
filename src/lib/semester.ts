@@ -38,7 +38,3 @@ export function getSemesterRangeByIndex(startIndex: number, endIndex: number): S
   }
   return semesters;
 }
-
-export function getSemesterRange(startDate: string, endDate: string): Semester[] {
-  return getSemesterRangeByIndex(getSemester(startDate).index, getSemester(endDate).index);
-}

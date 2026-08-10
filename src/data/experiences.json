@@ -7,7 +7,6 @@
     "endDate": "2024-08",
     "location": "Columbus, OH",
     "description": "Participated in a 10-day early arrival program for incoming engineering students. Built up relationships with peers and faculty within the College of Engineering while also building my engineering identity. Participated in the computer science track and built a matching game in Java.",
-    "current": false,
     "group": "CARE",
     "category": "Program"
   },
@@ -19,7 +18,6 @@
     "endDate": "2026-05",
     "location": "Columbus, OH",
     "description": "Participated in the Living Learning Community for Engineers, Architects, and Planners. Attended community events and built relationships with peers from the College of Engineering for 2 years.",
-    "current": false,
     "group": "CARE",
     "category": "Program"
   },
@@ -31,7 +29,6 @@
     "endDate": null,
     "location": "Columbus, OH",
     "description": "Program dedicated to uplifting students within STEM fields by strengthening pathways to and through science, technology, engineering, and mathematics careers.",
-    "current": true,
     "category": "Program"
   },
   {
@@ -42,7 +39,6 @@
     "endDate": null,
     "location": "Columbus, OH",
     "description": "Mentoring first-year engineering students in their transition to college. Supporting an early arrival program alongside consistent programming throughout the school year to engage with the greater community and my assigned mentees.",
-    "current": true,
     "featured": true,
     "group": "CARE",
     "category": "Involvement"
@@ -55,7 +51,6 @@
     "endDate": "2026-04",
     "location": "Columbus, OH",
     "description": "Representing the College of Engineering at tours, panels, and more. Providing information to prospective students about the College of Engineering and my experiences as a student.",
-    "current": false,
     "group": "Ambassadors",
     "category": "Involvement"
   },
@@ -67,7 +62,6 @@
     "endDate": "2025-08",
     "location": "Columbus, OH",
     "description": "Conducted research within the Wearable and Implantable Technologies Lab within the College of engineering. Developed machine learning applications to increase accuracy and prediction of a wearable motion sensor. Built entrepreneurship skills within the SEED programming, developing a full product pitch that was presented at the end of the summer.",
-    "current": false,
     "featured": true,
     "group": "WIT",
     "category": "Work"
@@ -80,7 +74,6 @@
     "endDate": "2025-08",
     "location": "Columbus, OH",
     "description": "Mentored first-year engineering students in their transition to college with the 10-day early arrival program. Supporting programming as well as educating within my assigned electrical engineering track teaching my designated group robotics.",
-    "current": false,
     "group": "CARE",
     "category": "Work",
     "continuesFrom": "preface-2024"
@@ -93,7 +86,6 @@
     "endDate": "2026-05",
     "location": "Columbus, OH",
     "description": "Participated in the Second-year Transformational Experience Program, building community within my cohort while strengthening and defining my identity within the university. Attended weekly programming throughout the fall and proposed my pitch at the end of the school year for funding support.",
-    "current": false,
     "category": "Program"
   },
   {
@@ -104,7 +96,6 @@
     "endDate": "2026-05",
     "location": "Columbus, OH",
     "description": "Coordinated fundraising efforts for the organization, including planning and executing events to raise awareness and funds for community initiatives.",
-    "current": false,
     "category": "Involvement"
   },
   {
@@ -115,7 +106,6 @@
     "endDate": "2026-05",
     "location": "Columbus, OH",
     "description": "Continued my research within the Wearable and Implantable Technologies Lab within the College of engineering. Developed machine learning applications to increase accuracy and prediction of a wearable motion sensor.",
-    "current": false,
     "featured": true,
     "group": "WIT",
     "category": "Work",
@@ -129,7 +119,6 @@
     "endDate": "2026-05",
     "location": "Columbus, OH",
     "description": "Participated in the Chase Society Scholars program, a year-long program where I attended lectures from outside speakers, film screenings, and social events where I could learn and meet experts and civic leaders.",
-    "current": false,
     "category": "Program"
   },
   {
@@ -140,7 +129,6 @@
     "endDate": "2026-04",
     "location": "Columbus, OH",
     "description": "Led the outreach efforts for OHI/O, coordinating events and initiatives to engage with the community and promote the organization by collaborating with other student organizations and leading hype events, workshops, and more.",
-    "current": false,
     "group": "OHI/O",
     "category": "Involvement"
   },
@@ -152,7 +140,6 @@
     "endDate": "2026-04",
     "location": "Columbus, OH",
     "description": "Participated in the CI Compass Fellowship Program, a 3-month program where I attended workshops and lectures to learn about research and cyberinfrastructure within major research facilities through America. Building up my research skills and learning about the different research opportunities available to me as an undergraduate student.",
-    "current": false,
     "featured": true,
     "category": "Program"
   },
@@ -164,7 +151,6 @@
     "endDate": null,
     "location": "Columbus, OH",
     "description": "Participating in the Honda Launchpad Program, attending programming throughout the academic year to learn from and network with Honda professionals and engage with the cohort.",
-    "current": true,
     "category": "Program"
   },
   {
@@ -175,7 +161,6 @@
     "endDate": null,
     "location": "Columbus, OH",
     "description": "Supporting the CARE Office Recruitment team by assisting with recruitment events, administrative tasks, and other initiatives to help the office run smoothly and effectively.",
-    "current": true,
     "featured": true,
     "group": "CARE",
     "category": "Work"
@@ -188,7 +173,6 @@
     "endDate": null,
     "location": "Columbus, OH",
     "description": "Performing outreach on behalf of SOCHE to promote cybersecurity training to local government entities and organizations. Assisting in government entities of Ohio to implement cybersecurity training and best practices to protect their organizations from cyber threats.",
-    "current": true,
     "featured": true,
     "category": "Work"
   },
@@ -200,7 +184,6 @@
     "endDate": null,
     "location": "Columbus, OH",
     "description": "Serving as Vice President of Engineering Ambassadors, training all new members and leading the organization in its mission to represent the College of Engineering at tours, panels, and more. Providing information to prospective students about the College of Engineering and my experiences as a student.",
-    "current": true,
     "featured": true,
     "group": "Ambassadors",
     "category": "Involvement",
@@ -214,7 +197,6 @@
     "endDate": null,
     "location": "Columbus, OH",
     "description": "Co-leading MakeOHI/O, Ohio State's largest hardware-based hackathon, where I am responsible for leading the team in planning and executing the event, managing logistics, and ensuring a positive experience for all participants.",
-    "current": true,
     "featured": true,
     "group": "OHI/O",
     "category": "Involvement",
@@ -228,7 +210,6 @@
     "endDate": "2026-07",
     "location": "Columbus, OH",
     "description": "Participating in the SWE Fellowship program, attending workshops and networking events to connect with industry professionals and advance my career in software engineering.",
-    "current": false,
     "featured": true,
     "category": "Work"
   }

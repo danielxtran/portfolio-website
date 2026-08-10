@@ -15,7 +15,8 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
     >
       <h3 className="font-display text-xl text-ink">{project.title}</h3>
       <p className="mt-1 font-body text-sm text-ink/60">
-        {project.company} · {formatDateRange(project.startDate, project.endDate)}
+        {project.company} · {project.location} ·{" "}
+        {formatDateRange(project.startDate, project.endDate)}
       </p>
     </button>
   );
