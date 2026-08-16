@@ -4,4 +4,5 @@ export type Event = {
   caption: string;
   url: string;
   date: string; // "YYYY-MM-DD"
+  image?: string;
 };
