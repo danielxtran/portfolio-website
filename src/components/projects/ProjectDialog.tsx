@@ -1,7 +1,7 @@
-import { useEffect, useRef } from "react";
 import Image from "next/image";
 import type { Project } from "@/types/project";
 import { formatDateRange } from "@/lib/date";
+import { useDialogController } from "@/lib/useDialogController";
 
 type ProjectDialogProps = {
   project: Project | null;
@@ -9,29 +9,14 @@ type ProjectDialogProps = {
 };
 
 export default function ProjectDialog({ project, onClose }: ProjectDialogProps) {
-  const dialogRef = useRef<HTMLDialogElement>(null);
-
-  useEffect(() => {
-    const dialog = dialogRef.current;
-    if (!dialog) return;
-
-    if (project && !dialog.open) {
-      dialog.showModal();
-    } else if (!project && dialog.open) {
-      dialog.close();
-    }
-  }, [project]);
+  const { dialogRef, closeOnBackdropClick } = useDialogController(project);
 
   return (
     <dialog
       ref={dialogRef}
       onClose={onClose}
       aria-labelledby="project-dialog-title"
-      onClick={(event) => {
-        if (event.target === event.currentTarget) {
-          dialogRef.current?.close();
-        }
-      }}
+      onClick={closeOnBackdropClick}
       className="fixed inset-0 m-auto h-fit max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-lg bg-paper text-ink backdrop:bg-ink/40"
     >
       {project && (

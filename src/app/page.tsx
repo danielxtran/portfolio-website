@@ -5,6 +5,7 @@ import Divider from "@/components/ui/Divider";
 import PageContainer from "@/components/ui/PageContainer";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { getCurrentExperience } from "@/lib/experience";
+import { getHomepageHighlights } from "@/lib/highlights";
 
 export default function Home() {
   const currentRoles = getCurrentExperience();
@@ -27,7 +28,7 @@ export default function Home() {
       <div className="text-center">
         <SectionHeading hoverColor="mustard">Highlighted Projects &amp; Events</SectionHeading>
       </div>
-      <HighlightsSection />
+      <HighlightsSection highlights={getHomepageHighlights()} />
     </PageContainer>
   );
 }

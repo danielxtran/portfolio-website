@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react";
 import type { Experience } from "@/types/experience";
 import { formatDateRange } from "@/lib/date";
+import { useDialogController } from "@/lib/useDialogController";
 
 type TimelineDetailDialogProps = {
   role: Experience | null;
@@ -8,29 +8,14 @@ type TimelineDetailDialogProps = {
 };
 
 export default function TimelineDetailDialog({ role, onClose }: TimelineDetailDialogProps) {
-  const dialogRef = useRef<HTMLDialogElement>(null);
-
-  useEffect(() => {
-    const dialog = dialogRef.current;
-    if (!dialog) return;
-
-    if (role && !dialog.open) {
-      dialog.showModal();
-    } else if (!role && dialog.open) {
-      dialog.close();
-    }
-  }, [role]);
+  const { dialogRef, closeOnBackdropClick } = useDialogController(role);
 
   return (
     <dialog
       ref={dialogRef}
       onClose={onClose}
       aria-labelledby="timeline-dialog-title"
-      onClick={(event) => {
-        if (event.target === event.currentTarget) {
-          dialogRef.current?.close();
-        }
-      }}
+      onClick={closeOnBackdropClick}
       className="fixed inset-0 m-auto h-fit max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-lg bg-paper text-ink backdrop:bg-ink/40"
     >
       {role && (
